@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Criado por Jesus Leal - contato@sysoplinux.com.br"
-# Este script pode ser modificado se puder manter meu nome :D
+#### Este script pode ser alterado, editado mas pessoal mantenha os créditos hehe :)
+#### Espero que este script seja útil para você!!
 echo ""
 read -a INI -p "Octeto INICIAL exemplo \"15\": "
 read -a FIM -p "Octeto FINAL exemplo \"20\": "
