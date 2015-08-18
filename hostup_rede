@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Criado por Jesus Leal - contato@sysoplinux.com.br"
+# Este script pode ser modificado se puder manter meu nome :D
+echo ""
+read -a INI -p "Octeto INICIAL exemplo \"15\": "
+read -a FIM -p "Octeto FINAL exemplo \"20\": "
+read -a IPREDE -p "IP da Rede sem o ultimo octeto exemplo \"192.168.1.\" digite: "
+echo ""
+for IP in $(seq $INI $FIM); do
+	ping -c 2 -w 2 $IPREDE$IP > /dev/null &&
+	echo "$IPREDE$IP - UP" ||
+	echo "$IPREDE$IP - DOWN"
+done
