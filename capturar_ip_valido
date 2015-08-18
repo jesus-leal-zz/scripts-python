@@ -1,5 +1,5 @@
 #!/bin/bash
-# Criado por Jesus Leal
+echo "Criado por Jesus Leal - contato@sysoplinux.com.br"
 # Este script pode ser modificado se puder manter meu nome :D
 # Capturar IP usando o curl -s
 # Criar o diretorio IPlog
