@@ -1,0 +1,9 @@
+#!/bin/bash
+# Capturar IP usando o curl -s
+# Criar o diretorio IPlog
+mkdir -p /tmp/IPlog
+# Local para savar os LOGs
+PATH_LOG='/tmp/IPlog'
+# LOG com data e hora
+LOG=`date +%F_%R_`
+curl -s 'http://www.myip.net/judge.php' | grep 'REMOTE_ADDR' | cut -f2 -d '=' | sed 's/^ \+//' >> "$PATH_LOG/IP_em_$LOG.txt"
