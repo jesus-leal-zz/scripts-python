@@ -1,4 +1,6 @@
 #!/bin/bash
+# Criado por Jesus Leal
+# Este script pode ser modificado se puder manter meu nome :D
 # Capturar IP usando o curl -s
 # Criar o diretorio IPlog
 mkdir -p /tmp/IPlog
